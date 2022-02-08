@@ -1,0 +1,45 @@
+Naming proper names for variables, functions, classes and objects is important for clean and understandable code. It's more important that other's should understand the working of the code and what the variables, functions and classes are doing. 
+
+We need to follow some of the steps for creating good names.
+
+1. Use Intention-Revealing Names: These names reveal what they are being used for.
+   For Ex:
+     int d;  // is not a Intention-Revealing Name
+     int elapsedTimeInDays;  // is a Intention-Revealing Name
+
+2. Avoid Disinformation: We should avoid words whose entrenched meanings vary from our intended meaning.
+
+3. Make Meaningful Distinctions: Names must be distinctioable with other. 
+   For Ex:
+        int[] a1;
+        int[] a2;
+        // above is not a meaning as they don't have any Meaningful Distinction in between them.
+        
+        String[] customersName;
+        double[] customersAge;
+
+4. Use Pronounceable Names
+
+5. Use Searchable Names: Naming the variable with a single letter like int a, b; creates a problem while searching th variables. Create names such that they reveal the action they perform and the data that they store.
+
+6. Avoid Encodings: Don't use encoded names because after sometime even you won't understand them.
+
+7. Hungarian Notation: Rather than naming a variable simply age, Hungarian Notation includes a prefix representing that variable's type. For ex: Naming the interface as iStudent etc.
+
+8. Interfaces and Implementations: For example, say you are building an ABSTRACT FACTORY for the creation of shapes. This factory will be an interface and will be implemented by a concrete class. What should you name them? IShapeFactory and ShapeFactory. I just want them to know that it’s a ShapeFactory. So if I must encode either the interface or the implementation, I choose the implementation. Calling it ShapeFactoryImp, or even the hideous CShapeFactory, is preferable to encoding the interface.
+
+9. Avoid Mental Mapping
+
+10. Class Names: Should have names which are noun. They should start with a capital letter and every word in them should be capital or uppercase. For Ex: class Student{} , class Book{}
+
+11. Method Names: Should reveal what activity that they are performing. Most verb phrase must be there. They should start with small letter and after than every other word must be uppercase. For ex: getStudentDetails(), updateStudentDetails() etc.
+
+12. Pick One Word per Concept: Pick one word for one abstract concept and stick with it. For instance, it’s confusing to have fetch, retrieve, and get as equivalent methods of different classes
+
+13. Don’t Pun: Avoid using the same word for two purposes. Using the same term for two different ideas is essentially a pun.
+
+14. Use Solution Domain Names: Using domain specific names helps us evaluate the working of the code. For Ex:  getDetails() does'nt give clear idea of which details the function return. getAccountDetails() gives us clear idea of what the function returns.
+
+15. Add Meaningful Context
+
+16. Don’t Add Gratuitous Context: In an imaginary application called “Gas Station Deluxe,” it is a bad idea to prefix every class with GSD. Frankly, you are working against your tools
