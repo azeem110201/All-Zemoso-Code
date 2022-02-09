@@ -5,13 +5,13 @@ public class CalculateMedianHostPing {
     public static void getMedianHostPingTime(String HostIPAddress) throws IOException {
         long start=System.currentTimeMillis();
 
-        InetAddress giveAddress=InetAddress.getByName(HostIPAddress);
+        InetAddress giveAddress=InetAddress.getByName(HostIPAddress);   // This method returns the instance of InetAddress containing LocalHost IP and name.
 
-        System.out.println("Canonical host name for the given IP Address:" + giveAddress.getCanonicalHostName());
-        System.out.println("Get the host name for the given IP Address:" + giveAddress.getHostAddress());
+        System.out.println("Canonical host name for the given IP Address:" + giveAddress.getCanonicalHostName());   // This method returns the fully qualified domain name for this IP address.
+        System.out.println("Get the host name for the given IP Address:" + giveAddress.getHostAddress());  //This method returns the host name for this IP address.
 
         System.out.println("Sending Ping request to host "+ HostIPAddress +".......");
-        if(giveAddress.isReachable(10000)){
+        if(giveAddress.isReachable(10000)){  // isReachable tries to reach that host for that particular amount of time specified.
             System.out.println("Host is reachable.");
         }
         else{

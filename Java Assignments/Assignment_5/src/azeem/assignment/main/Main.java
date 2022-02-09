@@ -10,7 +10,11 @@ public class Main {
     }
     public static void main(String[] args) {
         DataTypes dataTypes = new DataTypes();
+
+        //printing instance variables of the class.
         dataTypes.printInstanceVariables();
+
+        //printing local variables inside printLocalVariable()
         dataTypes.printLocalVariable();
 
         SingletonDemonstration();

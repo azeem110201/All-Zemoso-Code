@@ -14,6 +14,8 @@ public class Main {
         Scanner scr = new Scanner(System.in);
         System.out.print("Enter the sentence: ");
         String text = scr.nextLine();
+
+        // regex to check if the first letter is capital and it stops with full-stop or not
         Pattern pattern = Pattern.compile("[A-Z].+[.]");
         Matcher matcher = pattern.matcher(text);
         if(matcher.matches()){

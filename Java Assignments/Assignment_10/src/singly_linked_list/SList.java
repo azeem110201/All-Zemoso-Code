@@ -22,6 +22,8 @@ public class SList<T> {
 
         SListIterator<T> iterator = this.iterator();
         StringBuilder outputList = new StringBuilder();
+
+        // iterate through all the list elements and append it to outputList
         while(iterator.hasNext()){
             outputList.append(iterator.head.data+ "-->");
             iterator.next();

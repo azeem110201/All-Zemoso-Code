@@ -6,14 +6,18 @@ public class SListIterator<T> {
         this.head = head;
     }
 
+    // adding to linked list
     public Node<T> insertIntoSList(T data){
         Node<T> temp = new Node<>(data);
         temp.data = data;
 
+        //if the node is empty, it then creates a new node and assign to head
         if(this.head == null){
             this.head = temp;
             return this.head;
         }
+
+        // append the node to the end of the linked list while traversing to the end of the list using next pointer
 
         Node<T> current = this.head;
 
@@ -26,10 +30,15 @@ public class SListIterator<T> {
 
         return this.head;
     }
+
+    //remove node from the last
     public Node<T> removeFromLast(){
+        // if the head is null then retun null
         if(this.head == null){
             return null;
         }
+
+        //else traverse all the node-1 and remove the last node.
         Node<T> current = this.head;
         Node<T> previous = null;
 

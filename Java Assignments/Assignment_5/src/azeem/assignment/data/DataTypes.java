@@ -1,6 +1,8 @@
 package azeem.assignment.data;
 
 public class DataTypes {
+
+    // Instance Variables
     int number;
     char character;
 

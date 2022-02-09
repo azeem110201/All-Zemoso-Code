@@ -5,7 +5,10 @@ import java.util.regex.Pattern;
 
 public class Validation {
     public void validateDetails(String email, String password, short age) throws EmailValidation, PasswordValidation, AgeValidation {
+        // regex to check if a statement follows a particular pattern for email string
         String regex = "^(.+)@(.+)$";
+
+        // Pattern and Matcher class used to compile the regex and match it with the statement.
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
         if(!matcher.matches()){
