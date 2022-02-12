@@ -1,0 +1,6 @@
+CREATE TABLE Facility (
+   facNo CHAR(5),
+   facName VARCHAR(30) NOT NULL,
+   
+   CONSTRAINT PK_FACNO PRIMARY KEY (facNo)
+);

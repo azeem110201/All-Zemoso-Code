@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS EventPlan (
+  planNo  CHAR(5)  NOT NULL,
+  evntNo  CHAR(5)  NOT NULL,
+  workDate DATE NOT NULL,
+  notes TEXT,
+  activity VARCHAR(20) NOT NULL,
+  empNo CHAR(5),
+  
+  CONSTRAINT PK_PLANNO PRIMARY KEY (planNo),
+  CONSTRAINT FK_EVNTNO FOREIGN KEY (evntNo) REFERENCES EventRequest (evntNo),
+  CONSTRAINT FK_EMPNO FOREIGN KEY (empNo) REFERENCES Employee (empNo)
+);
