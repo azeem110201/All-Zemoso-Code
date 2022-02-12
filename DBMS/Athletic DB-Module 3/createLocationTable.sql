@@ -1,0 +1,8 @@
+CREATE TABLE Location (
+   locNo CHAR(5),
+   facNo CHAR(5) NOT NULL,
+   locName VARCHAR(30) NOT NULL,
+   
+   CONSTRAINT PK_LOCNO PRIMARY KEY (locNo),
+   CONSTRAINT FK_FACNO FOREIGN KEY (facNo) REFERENCES Facility (facNo)
+);

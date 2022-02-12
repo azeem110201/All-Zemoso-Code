@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS ResourceTbl (
+  resNo   CHAR(5)       NOT NULL,
+  resName VARCHAR(30)   NOT NULL,
+  rate    DECIMAL(8, 2) NOT NULL,
+  CONSTRAINT PK_RESNO PRIMARY KEY (resNo)
+);
