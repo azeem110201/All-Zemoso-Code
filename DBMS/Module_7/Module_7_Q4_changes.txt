@@ -1,0 +1,6 @@
+
+-- Attribute2-1 repeated twice in Entity 2
+
+-- Foreign key redundant in Entity 2. So to split it created a new table and added relationship via the newly created table
+
+-- Id Dependency Cardinality Rule, it has to be changed maximum cardinality from Entity 6 to Entity 7 to 1.
