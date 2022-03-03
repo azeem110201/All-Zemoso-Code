@@ -1,6 +1,6 @@
 package com.azeem.hibernatetuts.demo;
 
-import com.azeem.hibernatetuts.demo.entity.Student;
+import com.azeem.hibernatetuts.demo.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
