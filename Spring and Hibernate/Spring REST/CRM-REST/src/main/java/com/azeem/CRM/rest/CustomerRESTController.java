@@ -15,6 +15,7 @@ public class CustomerRESTController {
 
     @GetMapping("/customers")
     public List<Customer> getCustomers(){
+
         return customerService.getCustomers();
     }
 
