@@ -17,11 +17,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(new BCryptPasswordEncoder())
                 .withUser("azeem")
                 .password("$2a$10$HIEGyzrp69r63kuKJIlKvu9D7y5IEHneTMgTae3zDqF1lwEtimE4S")
-                .roles("USER")
-                .and()
-                .withUser("admin")
-                .password("$2a$10$HIEGyzrp69r63kuKJIlKvu9D7y5IEHneTMgTae3zDqF1lwEtimE4S")
                 .roles("ADMIN")
+                .and()
+                .withUser("john")
+                .password("$2a$10$HIEGyzrp69r63kuKJIlKvu9D7y5IEHneTMgTae3zDqF1lwEtimE4S")
+                .roles("USER")
         ;
 
     }
