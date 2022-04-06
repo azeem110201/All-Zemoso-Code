@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { TextUtils } from './components/TextUtils';
 import { Navbar } from './components/Navbar';
+import { About } from './components/About';
+import { Contact } from './components/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -15,10 +18,18 @@ function App() {
     }
   }
   return (
-    <div className="App">
+    // <div className="App">
+    //   <Navbar title={"Text-Utils"} mode={mode} toggleMode={toggleMode}/>
+    //   <TextUtils />
+    // </div>
+    <Router>
       <Navbar title={"Text-Utils"} mode={mode} toggleMode={toggleMode}/>
-      <TextUtils />
-    </div>
+      <Routes>
+        <Route path="/" element={<TextUtils />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/contact" element={<Contact />}/>
+      </Routes>
+    </Router>
   );
 }
 
