@@ -1,0 +1,1 @@
+-- No need for M-N rule here because we don't need to create any bridge table between any two tables
